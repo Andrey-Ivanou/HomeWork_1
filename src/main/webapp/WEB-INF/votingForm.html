@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Голосование</title>
+</head>
+
+<body bgcolor="#87ceeb">
+
+<form action="http://localhost:8080/homeWork-web-app-1-1.0-SNAPSHOT/form" method="post">
+    <fieldset>
+        <legend><h2>Форма для голосования</h2></legend>
+        <p><h4>Выбирите одного из кандитатов: Антон, Сергей, Игорь, Олег</h4></p>
+        Кандидат: <input list="кондидаты" name="name" placeholder="Введите имя" required><br>
+
+        <h4><p>Выбирите жанры (от 3 до 5 вариантов)</p></h4>
+
+        <p>
+            <a><input type="checkbox" name="genre" value="Поп-музыка">Поп-музыка</a>
+            <a><input type="checkbox" name="genre" value="Классическая музыка">Классическая музыка</a>
+            <a><input type="checkbox" name="genre" value="Рок">Рок</a>
+            <a><input type="checkbox" name="genre" value="Блюз">Блюз</a>
+            <a><input type="checkbox" name="genre" value="Ритм-н-Блюз">Ритм-н-Блюз</a>
+            <a><input type="checkbox" name="genre" value="Джаз">Джаз</a>
+            <a><input type="checkbox" name="genre" value="Шансон">Шансон</a>
+            <a><input type="checkbox" name="genre" value="Электро">Электро</a>
+            <a><input type="checkbox" name="genre" value="Хип-хоп">Хип-хоп</a>
+            <a><input type="checkbox" name="genre" value="Метал">Метал</a>
+        </p>
+
+        <p>
+        <h4><label for="comment">Ваш коментарий</label><br></h4>
+            <textarea id="comment" name="comment" aria-modal="100" placeholder="Написать комментарий не более 100 символов" cols="30" rows="7"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+    </fieldset>
+</form>
+
+<datalist id="кондидаты">
+    <option value="Антон"></option>
+    <option value="Сергей"></option>
+    <option value="Игорь"></option>
+    <option value="Олег"></option>
+</datalist>
+
+</body>
+
+</html>
